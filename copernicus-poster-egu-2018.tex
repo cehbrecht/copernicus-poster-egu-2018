@@ -2,7 +2,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[portrait,a0paper,fontscale=0.4]{baposter} % Adjust the font scale/size here
+\documentclass[landscape,a0paper,fontscale=0.4]{baposter} % Adjust the font scale/size here
 
 \usepackage{calc}
 \usepackage{relsize}   % For \smaller
@@ -65,7 +65,7 @@
   % Show grid to help with alignment
   grid=false,
   % Number of columns
-  columns=3,
+  columns=4,
   % Column spacing
   colspacing=1em,
   % Color style
@@ -165,17 +165,17 @@
     \item Products for coastal, water, insurance and energy sectors
   \end{itemize}
 
-  {\bf User benefits are:}
-  \begin{itemize}\compresslist
-    \item no need to download and store large data sets
-    \item data access from anywhere
-    \item easily performing the same analysis for several datasets
-    %\item automatically generated metrics for indicating data sets quality
-    %\item logged commands to make work reproducible
-    %\item pre-defined functionalities for reducing programming work-load
-    \item easier usability of climate model data by tailored tools
-      for specific sectors (insurance, water, energy, coastal)
-  \end{itemize}
+  % {\bf User benefits are:}
+  % \begin{itemize}\compresslist
+  %   \item no need to download and store large data sets
+  %   \item data access from anywhere
+  %   \item easily performing the same analysis for several datasets
+  %   %\item automatically generated metrics for indicating data sets quality
+  %   %\item logged commands to make work reproducible
+  %   %\item pre-defined functionalities for reducing programming work-load
+  %   \item easier usability of climate model data by tailored tools
+  %     for specific sectors (insurance, water, energy, coastal)
+  % \end{itemize}
 }
 
 
@@ -222,56 +222,6 @@
     \bibitem{cp4cds} CP4CDS on GitHub, \url{https://github.com/cp4cds}
     \bibitem{esgf} C3S MAGIC, \url{https://github.com/c3s-magic}
   \end{thebibliography}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Status}{name=status,column=0,span=1,below=references}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \begin{itemize}\compresslist
-  %   \item C3S overview and C3S Climate Data Store (CDS)
-  %   \item The CP4CDS project overview: ESGF Data Nodes, Index Nodes and CP4CDS Compute Nodes,
-  %     load-balancing across sites, QC'd CMIP5 data.
-  %   \item Requirement to deploy code from other projects/groups into the CP4CDS Compute Node, such as ESMValTool.
-  %   \item Chosen technology: Birdhouse WPS environment
-  %   \item Why Birdhouse? python, open source, actively developed, good design, client/security components, PyWPS extensions.
-  %   \item SDDS/Compute Node overview: including PyWPS cluster configuration for scalability.
-  %   \item SDDS workflow: template, GitHub fork etc
-  %   \item Status and next steps
-  % \end{itemize}
-  \begin{itemize}\compresslist
-    %\item A Copernicus WPS demo service is available on GitHub (CP4CDS repo)
-    \item A basic WPS template for SDDS is available on GiHub (CP4CDS repo)
-    \item An updated version of ESMValTool is used in CP4CDS demo via Conda package
-    \item A PyWPS scheduler extension for Slurm and Grid-Engine was developed
-    \item A token-based security proxy for WPS services is available
-    \item A quality checked CMIP5 data store is available at CEDA and partly replicated to other sites
-    \item An inital ESGF node federation is set-up at all three CP4CDS sites
-  \end{itemize}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Next Steps}{name=next,column=0,span=1,below=status}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \begin{itemize}\compresslist
-  %   \item C3S overview and C3S Climate Data Store (CDS)
-  %   \item The CP4CDS project overview: ESGF Data Nodes, Index Nodes and CP4CDS Compute Nodes,
-  %     load-balancing across sites, QC'd CMIP5 data.
-  %   \item Requirement to deploy code from other projects/groups into the CP4CDS Compute Node, such as ESMValTool.
-  %   \item Chosen technology: Birdhouse WPS environment
-  %   \item Why Birdhouse? python, open source, actively developed, good design, client/security components, PyWPS extensions.
-  %   \item SDDS/Compute Node overview: including PyWPS cluster configuration for scalability.
-  %   \item SDDS workflow: template, GitHub fork etc
-  %   \item Status and next steps
-  % \end{itemize}
-  \begin{itemize}\compresslist
-    %\item A PyWPS scheduler extension to use a Docker container for each process execution request is planned
-    %\item Implementing the latest WPS 2.0.0 standard in PyWPS (WPS 1.0.0 + job-cancel funtion
-    \item Further integration of MAGIC codes
-    \item Roll-out of CP4CDS at all three sites
-    \item Improved SDDS - using a template generator, replacing Buildout by Ansible, deployment in Docker Cluster
-    \item Using ESGF OAuth service for security tokens
-    \vspace{0.5em}
-  \end{itemize}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -454,7 +404,33 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{C3S MAGIC - Climate Data Analysis}{name=magic,column=1,span=2,below=arch}{
+\headerbox{Status}{name=status,column=1,span=2,below=arch}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % \begin{itemize}\compresslist
+  %   \item C3S overview and C3S Climate Data Store (CDS)
+  %   \item The CP4CDS project overview: ESGF Data Nodes, Index Nodes and CP4CDS Compute Nodes,
+  %     load-balancing across sites, QC'd CMIP5 data.
+  %   \item Requirement to deploy code from other projects/groups into the CP4CDS Compute Node, such as ESMValTool.
+  %   \item Chosen technology: Birdhouse WPS environment
+  %   \item Why Birdhouse? python, open source, actively developed, good design, client/security components, PyWPS extensions.
+  %   \item SDDS/Compute Node overview: including PyWPS cluster configuration for scalability.
+  %   \item SDDS workflow: template, GitHub fork etc
+  %   \item Status and next steps
+  % \end{itemize}
+  \begin{itemize}\compresslist
+    %\item A Copernicus WPS demo service is available on GitHub (CP4CDS repo)
+    \item A basic WPS template for SDDS is available on GiHub (CP4CDS repo)
+    \item An updated version of ESMValTool is used in CP4CDS demo via Conda package
+    \item A PyWPS scheduler extension for Slurm and Grid-Engine was developed
+    \item A token-based security proxy for WPS services is available
+    \item A quality checked CMIP5 data store is available at CEDA and partly replicated to other sites
+    \item An inital ESGF node federation is set-up at all three CP4CDS sites
+  \end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{C3S MAGIC - Climate Data Analysis}{name=magic,column=3,span=1}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \begin{minipage}{0.4\textwidth}
@@ -488,7 +464,7 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{SDDS - Software Deployment Dependency Solution}{name=sdds,column=1,span=2,below=magic}{
+\headerbox{SDDS - Software Deployment Dependency Solution}{name=sdds,column=3,span=1,below=magic}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \begin{minipage}{0.4\textwidth}
@@ -537,6 +513,30 @@
   % \end{itemize}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Next Steps}{name=next,column=3,span=1,below=sdds}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % \begin{itemize}\compresslist
+  %   \item C3S overview and C3S Climate Data Store (CDS)
+  %   \item The CP4CDS project overview: ESGF Data Nodes, Index Nodes and CP4CDS Compute Nodes,
+  %     load-balancing across sites, QC'd CMIP5 data.
+  %   \item Requirement to deploy code from other projects/groups into the CP4CDS Compute Node, such as ESMValTool.
+  %   \item Chosen technology: Birdhouse WPS environment
+  %   \item Why Birdhouse? python, open source, actively developed, good design, client/security components, PyWPS extensions.
+  %   \item SDDS/Compute Node overview: including PyWPS cluster configuration for scalability.
+  %   \item SDDS workflow: template, GitHub fork etc
+  %   \item Status and next steps
+  % \end{itemize}
+  \begin{itemize}\compresslist
+    %\item A PyWPS scheduler extension to use a Docker container for each process execution request is planned
+    %\item Implementing the latest WPS 2.0.0 standard in PyWPS (WPS 1.0.0 + job-cancel funtion
+    \item Further integration of MAGIC codes
+    \item Roll-out of CP4CDS at all three sites
+    \item Improved SDDS - using a template generator, replacing Buildout by Ansible, deployment in Docker Cluster
+    \item Using ESGF OAuth service for security tokens
+    \vspace{0.5em}
+  \end{itemize}
+}
 
 \end{poster}
 
