@@ -27,6 +27,10 @@
 %\usepackage{bookman}
 \usepackage{palatino}
 
+% umlaut etc
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
 %%% Global Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \graphicspath{{images/}{draw.io/}}	% Root directory of the pictures
@@ -104,10 +108,13 @@
   }
 %%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   {\sf %Sans Serif
-    C. Ehbrecht\footnotemark[2], A. Stephens\footnotemark[1], S. Kindermann\footnotemark[2], S. Denvil\footnotemark[3]\\
-    {\smaller Centre for Environmental Data Analysis (CEDA)\footnotemark[1],
-    German Climate Compute Centre (DKRZ)\footnotemark[2],
-    Institut Pierre Simon Laplace (IPSL)\footnotemark[3]}\hspace{7em}
+    Carsten Ehbrecht\footnotemark[1], Stephan Kindermann\footnotemark[1], Ag Stephens\footnotemark[2], Sébastien Denvil\footnotemark[3]\\
+    {\smaller
+      German Climate Compute Centre (DKRZ)\footnotemark[1],
+      Centre for Environmental Data Analysis (CEDA)\footnotemark[2],
+      Institut Pierre Simon Laplace (IPSL)\footnotemark[3]
+    }
+    \hspace{7em}
     \includegraphics[width=3em]{egu-logo} Vienna, 2018
   }
 %%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
