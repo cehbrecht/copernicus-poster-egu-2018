@@ -354,7 +354,7 @@
       \item {\bf PyWPS} - Python implementation of OGC Web Processing Standard
       \item Supervisor - used to start/stop and monitor services
       \item Processing outputs and status documents are web accessible by the Nginx file-service
-      \item {\bf Token based access control} (using OAuth) for WPS service
+      \item {\bf Access control} (X509 Certificate and OAuth token) for WPS service
       \item WPS Processes are defined for project analysis toolbox, like {\bf C3S MAGIC} diagnostics
       \item {\bf Processing Backend} has read-only access to the climate data pool on
         file-system with CMIP5 climate model projections and observational data.
@@ -440,7 +440,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Next Steps}{name=next,column=3,span=1,below=sdds}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
+
   \begin{itemize}\compresslist
     %\item A PyWPS scheduler extension to use a Docker container for each process execution request is planned
     %\item Implementing the latest WPS 2.0.0 standard in PyWPS (WPS 1.0.0 + job-cancel funtion
