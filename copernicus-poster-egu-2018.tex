@@ -80,12 +80,12 @@
   % Format of textbox
   textborder=roundedleft,
   % Format of text header
-  eyecatcher=true, % Set to false for ignoring the left logo in the title and move the title left
+  eyecatcher=false, % Set to false for ignoring the left logo in the title and move the title left
   headerborder=closed, % Adds a border around the header of content boxes
   headerheight=0.10\textheight, % Height of the header
   headershape=roundedright, % Specify the rounded corner in the content box headers
   headershade=shadelr,
-  headerfont=\Large\bf\textsc, %Sans Serif
+  headerfont=\Large\bf\textsf, %Sans Serif
   % textfont={\setlength{\parindent}{1.5em}},
   % boxshade=plain,
   % background=shade-tb,
@@ -93,30 +93,29 @@
   linewidth=2pt
   }
 %%% Eye Cacther %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {
-      \includegraphics[width=10em]{copernicus-logo}
-      \includegraphics[width=12em]{c3s-logo}
-  }
+  {} % No eye catcher for this poster. If an eye catcher is present, the title is centered between eye-catcher and logo.
+  % {
+  %     \includegraphics[width=10em]{copernicus-logo}
+  %     \includegraphics[width=12em]{c3s-logo}
+  % }
 %%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\sf\bf WPS based processing services for the\\
-          Copernicus Climate Change Service
+  {\sf %Sans Serif
+  Web Processing Services for Copernicus Climate Change Service
   }
 %%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {
-    \vspace{1em} A. Stephens, S. Kindermann, S. Denvil, W. Som de Cerff\\
-    {\smaller Centre for Environmental Data Analysis (CEDA),
-    German Climate Compute Centre (DKRZ),\\
-    Institut Pierre Simon Laplace (IPSL),
-    Royal Netherlands Meteorological Institute (KNMI)\\[1em]
-    \includegraphics[width=4em]{esgf-logo} ESGF F2F Meeting, San Francisco, 2017}
+  {\sf %Sans Serif
+    C. Ehbrecht\footnotemark[2], A. Stephens\footnotemark[1], S. Kindermann\footnotemark[2], S. Denvil\footnotemark[3]\\
+    {\smaller Centre for Environmental Data Analysis (CEDA)\footnotemark[1],
+    German Climate Compute Centre (DKRZ)\footnotemark[2],
+    Institut Pierre Simon Laplace (IPSL)\footnotemark[3]}\hspace{7em}
+    \includegraphics[width=3em]{egu-logo} Vienna, 2018
   }
 %%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   {
-    \begin{minipage}{10em}
-      \includegraphics[width=10em]{ceda-logo} \\
-      \includegraphics[width=7em]{dkrz-logo} \\
-      \includegraphics[width=10em]{ipsl-logo} \\
-      \includegraphics[width=7em]{knmi-logo} \\
+    \begin{minipage}{30em}
+      \hfill
+      \includegraphics[width=10em]{copernicus-logo}
+      \includegraphics[width=12em]{c3s-logo}
     \end{minipage}
   }
 
