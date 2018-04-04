@@ -1,6 +1,6 @@
-# Copernicus CP4CDS Poster for ESGF F2F 2017
+# Copernicus CP4CDS Poster for EGU 2018
 
-Copernicus WPS Poster for [ESGF F2F meeting 2017](https://esgf.llnl.gov/) in San Francisco.
+Copernicus WPS Poster for [EGU 2018](https://www.egu2018.eu/) in Vienna.
 
 This poster is generated with LaTeX.
 
@@ -19,13 +19,13 @@ Use the ``Makefile`` and just type:
 
 Or:
 
-    $ pdflatex --enable-write18 copernicus-poster-esgf-f2f-2017.tex
+    $ pdflatex --enable-write18 copernicus-poster-egu-2018.tex
 
 ## Draw.io Diagrams
 
 Diagrams are created using [draw.io](https://www.draw.io/):
 
-* [CP4CDS](https://www.draw.io/#Hcehbrecht%2Fcopernicus-poster-esgf-f2f-2017%2Fmaster%2Fdraw.io%2Fcp4cds.xml)
+* [CP4CDS](https://www.draw.io/#Hcehbrecht%2Fcopernicus-poster-egu-2018%2Fmaster%2Fdraw.io%2Fcp4cds.xml)
 
 Diagrams (and exported PNG files) are in the folder ``draw.io/``.
 

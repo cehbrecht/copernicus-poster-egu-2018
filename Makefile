@@ -1,4 +1,4 @@
-ALL: copernicus-poster-esgf-f2f-2017.pdf
+ALL: copernicus-poster-egu-2018.pdf
 
 %.pdf: %.tex Makefile
 	pdflatex --enable-write18 $< &&	pdflatex $< && pdflatex $<
